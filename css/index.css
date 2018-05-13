@@ -1,0 +1,132 @@
+body {
+  position: relative;
+  background: #706666;
+  background-image: url('../img/wood.jpg');
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+#display {
+  position: relative;
+  margin: 20px 0 20px 20px;
+  text-align: right;
+  height: 115px;
+  max-width: 243px;
+  overflow-wrap: break-word;
+  background: #c1d7d0;
+  background-image: -webkit-linear-gradient(bottom right, #c1d7d2, #a2c3bd);
+  background-image: linear-gradient(to top left, #c1d7d2, #a2c3bd);
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 10px #222;
+  font-size: 38px;
+}
+.calc-container {
+  position: absolute;
+  background: #ddd;
+  background-image: -webkit-linear-gradient(left top, #eee, #a6a6a6);
+  background-image: -webkit-linear-gradient(top left, #eee, #a6a6a6);
+  background-image: linear-gradient(to bottom right, #eee, #a6a6a6);
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 8px 8px 18px 2px #111;
+}
+@media (min-width: 641px) {
+  .calc-container {
+    left: 50%;
+    -webkit-transform: translate(-50%, 20%);
+            transform: translate(-50%, 20%);
+  }
+}
+.number-buttons-container {
+  width: 165px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.operator-button-container-1,
+.operator-button-container-2 {
+  width: 55px;
+  padding: 0;
+  display: inline-block;
+}
+.operator-button-container-2 {
+  vertical-align: top;
+}
+.number-button,
+#equals,
+#ce,
+.operator-button,
+#dot {
+  font-family: 'Electrolize', sans-serif;
+  background: #333;
+  background-image: -webkit-linear-gradient(left top, #666, #222);
+  background-image: -webkit-linear-gradient(top left, #666, #222);
+  background-image: linear-gradient(to bottom right, #666, #222);
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  line-height: 20px;
+  color: #eee;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 10px;
+}
+.operator-button {
+  font-family: 'Electrolize', sans-serif;
+}
+#ce {
+  background: #ff5c33;
+  background-image: -webkit-linear-gradient(left top, #ff704d, #ff471a);
+  background-image: -webkit-linear-gradient(top left, #ff704d, #ff471a);
+  background-image: linear-gradient(to bottom right, #ff704d, #ff471a);
+  font-size: 19px;
+}
+#add,
+#subtract,
+#multiply,
+#divide {
+  background: #0099ff;
+  background-image: -webkit-linear-gradient(left top, #44c2ff, #008ae6);
+  background-image: -webkit-linear-gradient(top left, #44c2ff, #008ae6);
+  background-image: linear-gradient(to bottom right, #44c2ff, #008ae6);
+  font-size: 35px;
+  font-weight: normal;
+}
+#percent {
+  background: #666;
+  background-image: -webkit-linear-gradient(left top, #808080, #555);
+  background-image: -webkit-linear-gradient(top left, #808080, #555);
+  background-image: linear-gradient(to bottom right, #808080, #555);
+}
+#equals {
+  padding: 0;
+  width: 110px;
+  line-height: 36px;
+  font-size: 20px;
+}
+#tally {
+  font-family: 'Electrolize', sans-serif;
+  font-size: 20px;
+  padding-right: 5px;
+  color: #324e45;
+}
+#result {
+  font-family: 'Electrolize', sans-serif;
+  padding-right: 5px;
+  font-size: 1em;
+  color: #283e34;
+}
+button {
+  outline: 0;
+}
+#brand {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #666;
+  font-family: 'Electrolize', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
